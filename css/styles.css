@@ -1,0 +1,301 @@
+body {
+    margin: 0 !important
+}
+#main{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Oswald', sans-serif;
+}
+.clearfix {
+overflow: auto;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#map {
+    width: 50%;
+    margin: auto;
+}
+#map span {
+font-size: 40px;
+margin: 8px auto 12px auto;
+display:inline-table;
+}
+#cardsSection div span {
+    display: inline-table;
+margin: 8px auto 12px auto;
+
+    font-size: 28px
+}
+.colorText {
+    color:#b562e9;
+}
+.header{
+    width: fit-content;
+    margin: auto
+}
+svg{
+    width: 100%;
+    height:100%
+}
+.path {
+    stroke-dasharray: 2000px;
+    stroke-dashoffset: 2000px;
+    animation: drawing 4s 1s linear forwards;
+}
+.pins {
+    opacity: 0 ;
+    transform: translateY(-30px);
+}
+.pinsGroup:nth-of-type(1) > .pins {
+    animation: fade-in 0.3s 4.5s linear forwards;
+}
+.pinsGroup:nth-of-type(2) > .pins {
+    animation: fade-in 0.3s 4.5s linear forwards;
+}
+.pinsGroup:nth-of-type(3) > .pins {
+    animation: fade-in 0.3s 4.7s linear forwards;
+}
+.pinsGroup:nth-of-type(4) > .pins {
+    animation: fade-in 0.3s 4.7s linear forwards;
+}
+.pinsGroup:nth-of-type(5) > .pins {
+    animation: fade-in 0.3s 5.1s linear forwards;
+}
+.pinsGroup:nth-of-type(6) > .pins{
+    animation: fade-in 0.3s 5.1s linear forwards;
+}
+.pinsGroup:nth-of-type(7) > .pins {
+    animation: fade-in 0.3s 5.3s linear forwards;
+}
+.pinsGroup:nth-of-type(8) > .pins {
+    animation: fade-in 0.3s 5.3s linear forwards;
+}
+.pinsGroup:nth-of-type(9) > .pins{
+    animation: fade-in 0.3s 5.5s linear forwards;
+}
+.pinsGroup:nth-of-type(10) > .pins {
+    animation: fade-in 0.3s 5.5s linear forwards;
+}
+.pinsGroup:nth-of-type(11) > .pins {
+    animation: fade-in 0.3s 5.7s linear forwards;
+}
+.pinsGroup:nth-of-type(12) > .pins {
+    animation: fade-in 0.3s 5.7s linear forwards;
+}
+.pinsGroup:nth-of-type(13) > .pins {
+    animation: fade-in 0.3s 5.9s linear forwards;
+}
+.pinsGroup:nth-of-type(14) > .pins {
+    animation: fade-in 0.3s 5.9s linear forwards;
+}
+.pinsGroup:nth-of-type(15) > .pins {
+    animation: fade-in 0.3s 6.1s linear forwards;
+}
+.pinsGroup:nth-of-type(16) > .pins {
+    animation: fade-in 0.3s 6.1s linear forwards;
+}
+.pinsGroup:nth-of-type(17) > .pins {
+    animation: fade-in 0.3s 6.3s linear forwards;
+}
+.pinsGroup:nth-of-type(18) > .pins{
+    animation: fade-in 0.3s 6.3s linear forwards;
+}
+.pinsGroup:nth-of-type(19) > .pins {
+    animation: fade-in 0.3s 6.5s linear forwards;
+}
+.pinsGroup:nth-of-type(20) > .pins {
+    animation: fade-in 0.3s 6.5s linear forwards;
+}
+.pinsGroup:nth-of-type(21) > .pins {
+    animation: fade-in 0.3s 6.7s linear forwards;
+}
+.pinsGroup:nth-of-type(22) > .pins {
+    animation: fade-in 0.3s 6.7s linear forwards;
+}
+.pinsGroup:nth-of-type(23) > .pins{
+    animation: fade-in 0.3s 6.9s linear forwards;
+}
+.pinsGroup:nth-of-type(24) > .pins {
+    animation: fade-in 0.3s 6.9s linear forwards;
+}
+.pinsGroup:nth-of-type(25) > .pins {
+    animation: fade-in 0.3s 7.1s linear forwards;
+}
+.pinsGroup:nth-of-type(26) > .pins {
+    animation: fade-in 0.3s 7.1s linear forwards;
+}
+.pinsGroup:nth-of-type(27) > .pins {
+    animation: fade-in 0.3s 7.3s linear forwards;
+}
+.pinsGroup:nth-of-type(28) > .pins {
+    animation: fade-in 0.3s 7.3s linear forwards;
+}
+.pinsGroup:nth-of-type(29) > .pins {
+    animation: fade-in 0.3s 7.5s linear forwards;
+}
+.pinsGroup:nth-of-type(30) > .pins {
+    animation: fade-in 0.3s 7.5s linear forwards;
+}
+.pinsGroup:nth-of-type(31) > .pins {
+    animation: fade-in 0.3s 7.7s linear forwards;
+}
+.pinsGroup:nth-of-type(32) > .pins {
+    animation: fade-in 0.3s 7.7s linear forwards;
+}
+.pinsGroup:nth-of-type(33) > .pins {
+    animation: fade-in 0.3s 7.9s linear forwards;
+}
+.pinsGroup:nth-of-type(34) > .pins {
+    animation: fade-in 0.3s 7.9s linear forwards;
+}
+
+
+@keyframes drawing {
+    to {
+        stroke-dashoffset: 0px;
+    }
+} 
+@keyframes fade-in {
+    to {
+        opacity: 1;
+    transform: translateY(0px);
+
+    }
+}
+
+.pinsGroup:hover{
+    opacity: 1;
+   animation: pop 0.3s linear forwards; 
+}
+.pinsGroup {
+    animation: popout 0.3s linear forwards;
+}
+
+@keyframes pop {
+    /* 0%{
+        opacity: 1;
+        transform: translateY(0px)
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-7px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    } */
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-5px);    
+
+    }
+}
+@keyframes popout {
+    from {
+        transform: translateY(-5px);
+    }
+    to {
+        transform: translateY(0px);
+
+    }
+}
+#popup{
+    width:100px;
+    height: 100px;
+    background: yellow;
+    display: block;
+    opacity: 0;
+}
+.pinsGroup:hover  #popup {
+    display:block;
+    position:fixed;
+    overflow:hidden;
+}
+.cards{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap
+
+}
+.card {
+    height: 100px;
+    margin: auto;
+    flex: 0 1 22%;
+    display: table-cell;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    }
+.card-content {
+    overflow: hidden;
+    height: 100px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    transition: 0.5s ease
+}
+.card:nth-of-type(1) .card-content {
+ 
+    background: #b562e9
+ }
+.card:nth-child(2) .card-content {
+    background: #6ce4fe
+    }
+.card:nth-of-type(3)  .card-content{
+    background: #f99c76
+}
+.card:nth-of-type(4) .card-content {
+    background: #7ceeb1
+}
+.card .card-content span, .overlay span {
+    /* margin: auto; */
+    display:table-cell;
+    vertical-align:middle;
+    line-height: 100px;
+    margin: 0 auto !important;
+}
+
+.overlay{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition:  .5s ease;
+    background-color: white;
+}
+.overlay span {
+    font-size: 20px !important;
+    cursor: pointer;
+}
+.card:nth-of-type(1) .overlay span {
+    text-decoration: underline #b562e9
+}
+.card:nth-of-type(2) .overlay span {
+    text-decoration: underline #6ce4fe
+}
+.card:nth-of-type(3) .overlay span{
+    text-decoration: underline #f99c76
+}
+.card:nth-of-type(4) .overlay span{
+    text-decoration: underline #7ceeb1
+}
+
+.card:hover .overlay {
+    opacity: 1;
+
+  }
+  .card:hover .card-content{
+    height: 0
+  }
+  #testtext{
+      opacity: 0;
+  }
