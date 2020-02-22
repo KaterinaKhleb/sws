@@ -334,10 +334,10 @@ svg{
         opacity: 0;
     } */
     4%{
-        opacity: 1;
+        opacity: 0.8;
     }
     26% {
-        opacity: 1;
+        opacity: 0.8;
     }
     30% {
         opacity: 0;
