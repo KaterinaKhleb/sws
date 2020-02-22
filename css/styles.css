@@ -299,3 +299,50 @@ svg{
   #testtext{
       opacity: 0;
   }
+  
+
+
+  #textOver span {
+    position: absolute;
+    top:24%;
+    margin: auto;
+    left: 50%;
+ -webkit-transform: translateX(-50%);
+ transform: translateX(-50%);
+    font-size: 5.5em !important;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    margin: auto;
+    opacity: 0;
+    /* display: inline; */
+  }
+  .textBlink1 {
+      animation: blink 16s 8s linear infinite; 
+  }
+  .textBlink2 {
+    animation: blink 16s 13s linear infinite; 
+}
+.textBlink3 {
+    animation: blink 16s 18s linear infinite; 
+}
+   @keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    /* 2%{
+        opacity: 0;
+    } */
+    4%{
+        opacity: 1;
+    }
+    26% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 0;
+    }
+   }
